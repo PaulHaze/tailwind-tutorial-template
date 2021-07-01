@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import { NavBar } from '../components';
 
-import { Spring, Transition, Framer } from '../views';
+import { Home } from '../views';
 
 export function MainLayout() {
   // const location = useLocation();
@@ -12,14 +12,8 @@ export function MainLayout() {
     <div className="flex">
       <NavBar />
       <Switch>
-        <Route path="/spring">
-          <Spring />
-        </Route>
-        <Route path="/framer">
-          <Framer />
-        </Route>
-        <Route path="/">
-          <Transition />
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
     </div>

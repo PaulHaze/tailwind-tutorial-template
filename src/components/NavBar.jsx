@@ -50,21 +50,9 @@ export function NavBar() {
                   ? 'bg-white'
                   : 'bg-blue-300 text-blue-100'
               }`}
-              to="/react-table"
+              to="/"
             >
-              Spring
-            </Link>
-          </li>
-          <li className="text-center">
-            <Link
-              className={`flex justify-center px-4 py-2 my-4 font-semibold text-center  rounded ${
-                pathname === '/framer'
-                  ? 'bg-white'
-                  : 'bg-blue-300 text-blue-100'
-              }`}
-              to="/react-data-table"
-            >
-              React-Data-Table
+              Add Route
             </Link>
           </li>
         </ul>
