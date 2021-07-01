@@ -1,0 +1,25 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply mt-0 text-4xl font-normal leading-normal;
+  }
+  h2 {
+    @apply mt-0 text-3xl font-normal leading-normal;
+  }
+  h3 {
+    @apply mt-0 text-2xl font-normal leading-normal;
+  }
+  h4 {
+    @apply mt-0 text-xl font-normal leading-normal;
+  }
+  h5 {
+    @apply mt-0 text-lg font-normal leading-normal;
+  }
+  a {
+    @apply text-blue-600;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
