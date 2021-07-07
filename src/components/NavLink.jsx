@@ -8,7 +8,7 @@ export function NavLink({ linkPath, linkName }) {
   return (
     <li className="">
       <Link
-        className={`flex justify-center px-4 py-2 my-4 font-semibold text-center rounded ${
+        className={`flex text-sm justify-center px-4 py-2 my-4 font-semibold text-center rounded ${
           pathname === linkPath ? 'bg-white' : 'bg-blue-50/50 text-blue-400/50'
         }`}
         to={linkPath}
