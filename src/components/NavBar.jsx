@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 
-import { Link, useLocation } from 'react-router-dom';
 import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
 } from '@heroicons/react/solid';
 import { NavLink } from './NavLink';
 
+import { routes } from '../routes';
+
 export function NavBar() {
   const [showHideNav, setShowHideNav] = useState(true);
 
-  const location = useLocation();
-  const { pathname } = location;
+  const renderRoutes = routes.map(r => (
+    <NavLink key={r.key} linkPath={r.path} linkName={r.label} />
+  ));
 
   const handleNavClick = () => setShowHideNav(prev => !prev);
   return (
@@ -31,10 +33,7 @@ export function NavBar() {
           )}
         </div>
 
-        <ul className={`w-full ${!showHideNav && 'hidden'}`}>
-          <NavLink linkPath="/" linkName="Home" />
-          <NavLink linkPath="/test" linkName="Test" />
-        </ul>
+        <ul className={`w-full ${!showHideNav && 'hidden'}`}>{renderRoutes}</ul>
       </nav>
     </div>
   );

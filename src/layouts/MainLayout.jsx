@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import { NavBar } from '../components';
 
-import { Home } from '../views';
+import { Home, Test } from '../views';
 
 export function MainLayout() {
   // const location = useLocation();
@@ -14,6 +14,9 @@ export function MainLayout() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/test">
+          <Test />
         </Route>
       </Switch>
     </div>

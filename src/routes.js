@@ -4,4 +4,9 @@ export const routes = [
     key: 'home',
     label: 'Home',
   },
+  {
+    path: '/test',
+    key: 'test',
+    label: 'Test',
+  },
 ];
