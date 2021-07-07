@@ -6,9 +6,7 @@ import {
 } from '@heroicons/react/solid';
 import { NavLink } from './NavLink';
 
-import { routes } from '../routes';
-
-export function NavBar() {
+export function NavBar({ routes }) {
   const [showHideNav, setShowHideNav] = useState(true);
 
   const renderRoutes = routes.map(r => (
