@@ -1,4 +1,4 @@
-import { Home, Test, TestTwo } from './views';
+import { Home } from './views';
 
 export const routes = [
   {
@@ -6,17 +6,5 @@ export const routes = [
     key: 'home',
     label: 'Home',
     component: Home,
-  },
-  {
-    path: '/test',
-    key: 'test',
-    label: 'Test',
-    component: Test,
-  },
-  {
-    path: '/testTwo',
-    key: 'testTwo',
-    label: 'TestTwo',
-    component: TestTwo,
   },
 ];

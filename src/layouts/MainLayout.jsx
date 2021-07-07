@@ -1,11 +1,6 @@
 import React from 'react';
-
 import { Switch, Route } from 'react-router-dom';
-
 import { NavBar } from '../components';
-
-import { Home } from '../views';
-
 import { routes } from '../routes';
 
 export function MainLayout() {
@@ -23,12 +18,7 @@ export function MainLayout() {
   return (
     <div className="flex">
       <NavBar routes={routes} />
-      <Switch>
-        {/* <Route exact path="/">
-          <Home />
-        </Route> */}
-        {getRoutes}
-      </Switch>
+      <Switch>{getRoutes}</Switch>
     </div>
   );
 }
