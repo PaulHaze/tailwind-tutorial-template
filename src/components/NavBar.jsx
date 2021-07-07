@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
-
 import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
 } from '@heroicons/react/solid';
+import { NavLink } from './NavLink';
 
 export function NavBar() {
   const [showHideNav, setShowHideNav] = useState(true);
@@ -32,29 +32,8 @@ export function NavBar() {
         </div>
 
         <ul className={`w-full ${!showHideNav && 'hidden'}`}>
-          <li className="">
-            <Link
-              exact
-              className={`flex justify-center px-4 py-2 my-4 font-semibold text-center rounded ${
-                pathname === '/' ? 'bg-white' : 'bg-blue-300 text-blue-100'
-              }`}
-              to="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li className="text-center">
-            <Link
-              className={`flex justify-center px-4 py-2 my-4 font-semibold text-center  rounded ${
-                pathname === '/spring'
-                  ? 'bg-white'
-                  : 'bg-blue-300 text-blue-100'
-              }`}
-              to="/"
-            >
-              Add Route
-            </Link>
-          </li>
+          <NavLink linkPath="/" linkName="Home" />
+          <NavLink linkPath="/test" linkName="Test" />
         </ul>
       </nav>
     </div>
