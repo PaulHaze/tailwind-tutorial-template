@@ -18,7 +18,7 @@ export function NavBar() {
   const handleNavClick = () => setShowHideNav(prev => !prev);
   return (
     <div className="flex">
-      <nav className="h-[100vh] p-5 px-2 py-4 mr-4 bg-gradient-to-b from-indigo-300/90 to-sky-800/90">
+      <nav className="h-[100vh] p-5 px-2 py-4 bg-gradient-to-b from-indigo-300/90 to-sky-800/90">
         <div className="flex w-full">
           {showHideNav ? (
             <ChevronDoubleLeftIcon
