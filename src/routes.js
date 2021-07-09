@@ -2,7 +2,7 @@ import { Home } from './views';
 
 export const routes = [
   {
-    path: '/home',
+    path: '/',
     key: 'home',
     label: 'Home',
     component: Home,
