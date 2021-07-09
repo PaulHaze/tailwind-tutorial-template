@@ -8,6 +8,7 @@ export function MainLayout() {
   const getRoutes = routes.map(prop => {
     return (
       <Route
+        exact
         // path={prop.layout + prop.path}
         path={prop.path}
         render={() => <prop.component />}
