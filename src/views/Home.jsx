@@ -2,9 +2,11 @@ import React from 'react';
 
 export function Home() {
   return (
-    <div className="w-full pt-10 bg-blue-100">
-      <div className="h-40 w-44 rounded bg-white shadow-lg pt-10 mx-auto text-center px-5">
-        <h5>Delete this and start coding</h5>
+    <div className="w-full pt-10 bg-gradient-to-b from-indigo-100 to-violet-200">
+      <div className="flex items-center justify-center w-8/12 h-40 mx-auto bg-white border rounded shadow-lg">
+        <h5 className="font-semibold text-coolgray-700">
+          Delete this and start coding
+        </h5>
       </div>
     </div>
   );
