@@ -17,7 +17,7 @@ export function MainLayout() {
     );
   });
   return (
-    <div className="flex min-h-screen">
+    <div className="flex">
       <NavBar routes={routes} />
       <Switch>{getRoutes}</Switch>
     </div>
