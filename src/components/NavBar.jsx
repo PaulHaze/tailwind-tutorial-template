@@ -16,7 +16,7 @@ export function NavBar({ routes }) {
   const handleNavClick = () => setShowHideNav(prev => !prev);
   return (
     <div className="flex">
-      <nav className="h-[100vh] p-5 px-2 py-4 bg-gradient-to-b from-indigo-300/90 to-sky-800/90">
+      <nav className="flex-grow p-5 px-2 py-4 bg-gradient-to-b from-indigo-300/90 to-sky-800/90">
         <div className="flex w-full">
           {showHideNav ? (
             <div className="flex items-center justify-center w-8 h-8 bg-white border rounded-lg border-blue-500/50">
